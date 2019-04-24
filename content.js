@@ -4,11 +4,12 @@ chrome.runtime.onMessage.addListener((message)=> {
     var outline = "http://outline.com/";
     var article = window.location.href;
     var redirect = outline + article;
+    var error = "https://outline.com/error";
 
     if (message) {
         window.open(redirect);
     }
     else {
-        alert('Error:\n\nCannot Outline webpage.');
+        window.open(error);
     }
 });
