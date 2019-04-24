@@ -31,5 +31,5 @@
     },
 
     "incognito": "spanning",
-    "permissions": ["contextMenus", "tabs"]
+    "permissions": ["contextMenus", "activeTab"]
 }
